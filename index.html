@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeArena 2026 | Register Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Floating particles canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Sticky Nav -->
+<nav class="sticky-nav" id="stickyNav">
+    <div class="sticky-nav-inner">
+        <span class="nav-brand">CODE<span>ARENA</span></span>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2hPDMwS7Xxv9f0Gg8l_R5i24GsoMW7BuDDqdo60OovsnuWw/viewform?usp=dialog" target="_blank" class="nav-cta">Register →</a>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="navbar">
+    <div class="navbar-logo-wrap">
+        <div class="logo-ring">
+            <img src="logo.jpeg" alt="SEACOM Engineering College Logo" class="logo-img" />
+        </div>
+        <div class="header-text-block">
+            <div class="logo">
+                <span class="logo-code">CODE</span><span class="logo-arena">ARENA</span>
+            </div>
+            <div class="organized-text">Organized by Department of Computer Science Engineering</div>
+            <div class="college-name">SEACOM Engineering College</div>
+        </div>
+    </div>
+   
+</header>
+ <div class="header-ticker">
+        
+        <span class="ticker-text">Registration Open &nbsp;•&nbsp; May 29, 2026 &nbsp;•&nbsp; Deadline: May 27th, 11:59 PM IST &nbsp;•&nbsp; Solo or Pairs &nbsp;•&nbsp; All Departments Welcome &nbsp;•&nbsp; Registration Open &nbsp;•&nbsp;</span>
+    </div>
+<!-- Hero -->
+<section class="hero" id="about">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Registrations Open</span>
+        </div>
+        <h1 class="hero-title">Level Up Your<br><span class="highlight">Mind &amp; Code</span></h1>
+        <p class="hero-sub">The ultimate inter-college battle of logic, speed and creativity.</p>
+        <div class="hero-ctas">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2hPDMwS7Xxv9f0Gg8l_R5i24GsoMW7BuDDqdo60OovsnuWw/viewform?usp=dialog" target="_blank" class="cta-button">Register Now →</a>
+            <a href="#gallery" class="cta-outline">View Gallery</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-num" data-target="120">0</span>+
+                <span class="stat-label">Participants</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="2">0</span>
+                <span class="stat-label">Years Running</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="8">0</span>+
+                <span class="stat-label">Colleges</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="code-window">
+            <div class="window-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="window-title">solution.cpp</span>
+            </div>
+            <pre class="code-content"><span class="kw">int</span> <span class="fn">solve</span>(<span class="kw">vector</span>&lt;<span class="kw">int</span>&gt;&amp; arr) {
+  <span class="kw">int</span> n = arr.size();
+  <span class="kw">int</span> ans = <span class="num">0</span>;
+
+  <span class="cmt">// O(n log n) approach</span>
+  sort(arr.begin(), arr.end());
+
+  <span class="kw">for</span> (<span class="kw">int</span> i = <span class="num">0</span>; i &lt; n; i++) {
+    ans = max(ans, arr[i] * (n - i));
+  }
+
+  <span class="kw">return</span> ans;
+}
+
+<span class="cmt">// Time: O(n log n)</span>
+<span class="cmt">// Space: O(1) ✓</span></pre>
+            <div class="code-cursor"></div>
+        </div>
+        <div class="floating-chip chip-1">Python</div>
+        <div class="floating-chip chip-2">C</div>
+        <div class="floating-chip chip-3">Java</div>
+    </div>
+</section>
+
+<!-- Event Info Cards -->
+<section class="info-section">
+    <div class="info-grid">
+        <div class="card reveal">
+            <div class="card-icon">📅</div>
+            <h3>WHEN</h3>
+            <p>May 29th, 2026<br>10:00 AM Sharp</p>
+        </div>
+        <div class="card reveal" style="animation-delay:0.1s">
+            <div class="card-icon">📍</div>
+            <h3>WHERE</h3>
+            <p>Computer Lab<br>Academic Block A1</p>
+        </div>
+        <div class="card reveal" style="animation-delay:0.2s">
+            <div class="card-icon">👥</div>
+            <h3>TEAM</h3>
+            <p>Solo or Pairs<br>All Depts Welcome</p>
+        </div>
+        <div class="card reveal" style="animation-delay:0.3s">
+            <div class="card-icon">⏱️</div>
+            <h3>DURATION</h3>
+            <p>3 Hours<br>Non-stop Coding</p>
+        </div>
+    </div>
+</section>
+
+<!-- Deadline Warning -->
+<div class="deadline-warning">
+    <div class="deadline-warning-content">
+        <span class="warning-icon">⚠️</span>
+        <div class="deadline-text-group">
+            <h3 class="deadline-title">Registration Deadline</h3>
+            <p class="deadline-date">May 27th, 2026 &bull; 11:59 PM IST</p>
+        </div>
+        <span class="warning-icon">⚠️</span>
+    </div>
+</div>
+<!--
+    Prize section 
+    <section class="prizes-section" id="prizes">
+        <div class="section-header">
+            <span class="section-tag">REWARDS</span>
+            <h2 class="section-title">Prize Pool</h2>
+            <p class="section-desc">Compete. Win. Get recognized.</p>
+        </div>
+        <div class="prizes-grid">
+            <div class="prize-card silver reveal">
+                <div class="prize-medal">🥈</div>
+                <div class="prize-rank">2nd Place</div>
+                <div class="prize-label">Runner-Up</div>
+                <div class="prize-detail">Certificate + Trophy</div>
+            </div>
+            <div class="prize-card gold reveal">
+                <div class="prize-crown">👑</div>
+                <div class="prize-medal">🥇</div>
+                <div class="prize-rank">1st Place</div>
+                <div class="prize-label">Champion</div>
+                <div class="prize-detail">Certificate + Trophy + Recognition</div>
+            </div>
+            <div class="prize-card bronze reveal">
+                <div class="prize-medal">🥉</div>
+                <div class="prize-rank">3rd Place</div>
+                <div class="prize-label">2nd Runner-Up</div>
+                <div class="prize-detail">Certificate + Trophy</div>
+            </div>
+        </div>
+        <p class="prizes-note">All participants receive an e-Certificate of Participation</p>
+    </section>
+-->
+<!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+    <div class="section-header">
+        <span class="section-tag">MEMORIES</span>
+        <h2 class="section-title">Previous Years</h2>
+        <p class="section-desc">Relive the intensity of past CodeArena editions.</p>
+    </div>
+
+    <div class="gallery-tabs">
+        <button class="tab-btn active" data-year="2025">2025</button>
+        <button class="tab-btn" data-year="2024">2024</button>
+        
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+        <!-- 2025 Gallery -->
+        <div class="gallery-item big reveal" data-year="2025">
+           <img src="images/2025/gal.jpg" alt="Opening Ceremony 2025" class="gallery-img">
+            <div class="gallery-overlay">
+                <span> Hackathon 2025 Kickoff</span>
+            </div>
+        </div>
+        <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.1s">
+            <img src="images/2025/crowd.jpg" alt="Winners 2025" class="gallery-img">
+            <div class="gallery-overlay"><span>In Progress</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.15s">
+            <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.1s">
+            <img src="images/2025/prize.jpg" alt="Winners 2025" class="gallery-img">
+            <div class="gallery-overlay"><span>Prize Distribution</span></div>
+        </div>
+            <div class="gallery-overlay"><span>Prize Distribution</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.2s">
+            <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.1s">
+            <img src="images/2025/rev.jpg" alt="Winners 2025" class="gallery-img">
+            <div class="gallery-overlay"><span>In Progress</span></div>
+        </div>
+            <div class="gallery-overlay"><span>Focused &amp; Fierce</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.25s">
+           <div class="gallery-item reveal" data-year="2025" style="animation-delay:0.1s">
+            <img src="images/2025/lmp.jpg" alt="Lighting up" class="gallery-img">
+            <div class="gallery-overlay"><span>Lighting up</span></div>
+        </div>
+            <div class="gallery-overlay"><span>Lighting up </span>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- 2024 Gallery -->
+        <div class="gallery-item big reveal hidden" data-year="2024">
+            <img src="images/2024/the_pannel.jpg" alt="Opening Ceremony 2024" class="gallery-img">
+            <div class="gallery-overlay"><span>ByteBlitz 2024 — Launch</span></div>
+        </div>
+        <div class="gallery-item reveal hidden" data-year="2024">
+           <img src="images/2024/winners_2024.jpg" alt="Prize Distribution" class="gallery-img">
+            <div class="gallery-overlay"><span>Award Ceremony 2024</span></div>
+        </div>
+        <div class="gallery-item reveal hidden" data-year="2024">
+            <img src="images/2024/strategic_sessions.jpg" alt="Strategic Sessions" class="gallery-img">
+            <div class="gallery-overlay"><span>Think. Code. Win.</span></div>
+        </div>
+        <div class="gallery-item reveal hidden" data-year="2024">
+            <div class="gallery-placeholder gp-3">
+               <img src="images//2024/the_momentofinsight.jpg" alt="The Moment of Insight" class="gallery-img">
+            </div>
+            <div class="gallery-overlay"><span>The Eureka Moment</span></div>
+        </div>
+        <div class="gallery-item reveal hidden" data-year="2024">
+            <img src="images/2024/the_team.jpg" alt="The Team" class="gallery-img">
+            <div class="gallery-overlay"><span>The Team</span></div>
+        </div>
+
+        
+    </div>
+
+    <p class="gallery-note">📸 Have photos from previous editions? Share with us at <a href="mailto:indra.com1234@gmail.com" class="inline-link">souravchabri4@gmail.com</a></p>
+</section>
+
+<!-- Timeline Section -->
+<section class="timeline-section">
+    <div class="section-header">
+        <span class="section-tag">SCHEDULE</span>
+        <h2 class="section-title">Event Timeline</h2>
+        <p class="section-desc">May 29th, 2026 — Here's how the day unfolds.</p>
+    </div>
+    <div class="timeline">
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">9:30 AM</div>
+            <div class="tl-card">
+                <h4>Registration & Check-in</h4>
+                <p>Report to Academic Block A1 with your ID card</p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">10:00 AM</div>
+            <div class="tl-card highlight-tl">
+                <h4>Lamp Lighting </h4>
+                <p>Speech and well wishing from the guests</p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">10:30 PM</div>
+            <div class="tl-card">
+                <h4>Competition Starts </h4>
+                <p>Problems released — the clock starts ticking!</p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">1:00 PM</div>
+            <div class="tl-card highlight-tl">
+                <h4>Round Submission</h4>
+                <p>All solutions locked — judging begins</p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">1:30 PM</div>
+            <div class="tl-card">
+                <h4>Lunch Break</h4>
+                <p>Chill out and have your Lunch </p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">2:00 PM</div>
+            <div class="tl-card">
+                <h4>Final Round Starts </h4>
+                <p>Final round - All the best </p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">3:00 PM</div>
+            <div class="tl-card">
+                <h4>Final Submissions</h4>
+                <p>Lock in your code for jugdgements </p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-time">3:45 PM</div>
+            <div class="tl-card">
+                <h4> Prize Distribution</h4>
+                <p>Winners announced &amp; certificates awarded</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="section-header">
+        <span class="section-tag">REACH US</span>
+        <h2 class="section-title contact-title">Contact &amp; Support</h2>
+        <p class="section-desc contact-message">Get in touch with our team for queries and assistance!</p>
+    </div>
+
+    <div class="faculty-section">
+        <h3 class="section-subtitle">Faculty Co-ordinators</h3>
+        <div class="contact-grid">
+            <div class="contact-card reveal">
+                <div class="contact-card-header">
+                    <div class="contact-avatar">SC</div>
+                    <div>
+                        <h4 class="teacher-name">Asst. Prof. Sourav Chabri</h4>
+                        <p class="teacher-title">Event Co-ordinator</p>
+                    </div>
+                </div>
+                <div class="contact-card-body">
+                    <div class="contact-info-item">
+                        <span class="icon">📧</span>
+                        <a href="mailto:souravchabri4@gmail.com" class="contact-link">souravchabri4@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="icon">📱</span>
+                        <a href="tel:+91-9330111410" class="contact-link">+91 9330 111 410</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card reveal">
+                <div class="contact-card-header">
+                    <div class="contact-avatar">TS</div>
+                    <div>
+                        <h4 class="teacher-name">Asst. Prof. Trayee Sarkar</h4>
+                        <p class="teacher-title">Co-ordinator</p>
+                    </div>
+                </div>
+                <div class="contact-card-body">
+                    <div class="contact-info-item">
+                        <span class="icon">📧</span>
+                        <a href="mailto:trayeesarkar456@gmail.com" class="contact-link">trayeesarkar456@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="icon">📱</span>
+                        <a href="tel:+91-7278481489" class="contact-link">+91 7278 481 489</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="student-section">
+        <h3 class="section-subtitle">Student Co-ordinators</h3>
+        <div class="contact-grid">
+            <div class="contact-card reveal">
+                <div class="contact-card-header">
+                    <div class="contact-avatar" style="background: linear-gradient(135deg, #8b5cf6, #06d6d0);">ST</div>
+                    <div>
+                        <h4 class="student-name">Siddhartha Tripathi</h4>
+                        <p class="student-title">Co-ordinator</p>
+                    </div>
+                </div>
+                <div class="contact-card-body">
+                    <div class="contact-info-item">
+                        <span class="icon">📧</span>
+                        <a href="mailto:siddharthatripathi937@gmail.com" class="contact-link">siddharthatripathi937@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="icon">📱</span>
+                        <a href="tel:+91-8478042296" class="contact-link">+91 8478 042 296</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card reveal">
+                <div class="contact-card-header">
+                    <div class="contact-avatar" style="background: linear-gradient(135deg, #d4a574, #8b5cf6);">IB</div>
+                    <div>
+                        <h4 class="student-name">Indrajit Biswas</h4>
+                        <p class="student-title">Co-ordinator</p>
+                    </div>
+                </div>
+                <div class="contact-card-body">
+                    <div class="contact-info-item">
+                        <span class="icon">📧</span>
+                        <a href="mailto:indra.com1234@gmail.com" class="contact-link">indra.com1234@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="icon">📱</span>
+                        <a href="tel:+91-9123771056" class="contact-link">+91 9123 771 056</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+    <div class="final-cta-inner">
+        <h2>Ready to Compete?</h2>
+        <p>Seats are limited — secure your spot before May 27th, 11:59 PM IST</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2hPDMwS7Xxv9f0Gg8l_R5i24GsoMW7BuDDqdo60OovsnuWw/viewform?usp=dialog" target="_blank" class="cta-button large">Register Now — It's Free →</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">CODE<span>ARENA</span> 2026</div>
+        <p>&copy; 2026 SEACOM Engineering College &mdash; Computer Science Engineering Dept.</p>
+        <p class="footer-built">Built with ❤️ by the CSE Tech Community</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
